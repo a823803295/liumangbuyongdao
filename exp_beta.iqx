@@ -1,0 +1,178 @@
+﻿<item instruction>
+	/1 = "下面将呈现一些中文或英语词语。在出现词语之前屏幕中央会呈现‘+’，请你将目光集中于此。之后将在同一位置呈现第一个词，这时不做反应，呈现第二个词时，请你判断其是否为动物，要求尽量快并且准确。这些呈现词可能是中文，也可能是英文的，也可能是中英文混合的。如果是，请按F键，如果不是，请按J键"
+</item>
+
+<item key>
+	/1 = "如果对指导语没有疑问,请按空格键开始实验"
+</item>
+
+<item qidong>
+/1="1"
+/2="2"
+/3="3"
+/4="4"
+/5="5"
+/6="6"
+/7="7"
+/8="8"
+/9="9"
+/10="10"
+/11="11"
+/12="12"
+</item>
+
+<item mubiao>
+/1="一"
+/2="二"
+/3="三"
+/4="四"
+/5="五"
+/6="六"
+/7="七"
+/8="八"
+/9="九"
+/10="十"
+/11="十一"
+/12="十二"
+</item>
+
+<item correctmsg>
+	/1 = "√"
+</item>
+
+<item errormsg>
+	/1 = "×"
+</item>
+
+<item fixation>
+	/1 = "+"
+</item>
+=====================================item定义结束=================================
+<text instructiontxt>
+	/items = instruction
+	/fontstyle = ("楷体", 2.76%, true, false, false, false, 5, 1)
+	/txcolor = (240, 248, 255)
+	/txbgcolor = (0,0,0)
+	/txcolor = (255,255,255)
+	/size = (1300,800)
+	/hjustify = left
+</text>
+
+
+<text anykeytxt>
+	/items = key
+	/vposition = 70 pct
+	/fontstyle = ("楷体", 2.76%, true, false, false, false, 5, 1)
+	/txcolor = (255, 0, 0)
+	/txbgcolor = (0,0,0)
+</text>
+======================================================
+
+======================================================
+<text qidong>
+    /items = qidong
+	/select =values.number
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao>
+    /items = mubiao
+    /select =values.number
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text fixation>
+	/items = fixation
+	/fontstyle = ("Arial", 80ptc)
+	/txbgcolor = (transparent)
+	/txcolor = (0,0,0)
+</text>
+
+<text correctmsg>
+	/items = correctmsg
+	/select = 1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (white)
+</text>
+
+<text errormsg>
+	/items = errormsg
+	/select = 1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (white)
+</text>
+==============================文字也设置好了===================================
+<values>
+	/fixationtime = 0
+    /shapetime = 0
+    /qidongtime = 0
+    /blank2time = 0
+    /mubiaotime = 0
+    /number=0
+    /cr="A"
+</values>
+
+<expressions>
+	/generaterandom = ceil(rand(500,1000))
+</expressions>
+==================================================
+<shape blank1>
+	/erase = True(255,255,255)
+	/color = (white)
+	/size = (300,300)
+    /shape = rectangle
+</shape>
+
+<shape blank2>
+	/erase = True(255,255,255)
+	/color = (white)
+	/size = (300,300)
+    /shape = rectangle
+</shape>
+====这里设置了number,后期通过number的累加来显示不同的文字，同时让注视点随机在500ms~1s内呈现。====
+
+<trial traintrial>
+    /correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+	/validresponse = ("a","F","J")
+    /correctresponse = ("F")
+    /ontrialbegin = [values.number=noreplace(1,2,3,4,5,6,7,8,9,10,11,12)]
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.traintrial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.traintrial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.traintrial.insertstimulustime(text.qidong,values.qidongtime)]
+	/ontrialbegin = [trial.traintrial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.traintrial.insertstimulustime(text.mubiao,values.mubiaotime)]
+	/ontrialend = [trial.traintrial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+</trial>
+
+<trial instruction>
+	/validresponse = (anyresponse)
+	/stimulustimes = [1=instructiontxt, anykeytxt]
+	/recorddata = false
+</trial>
+==================================================================================
+<block instructionblk>
+	/screencolor = (255,255,255)
+	/trials = [1 = instruction]
+</block>
+
+<block train>
+	/screencolor = (255,255,255)
+	/blockfeedback = (meanlatency,correct)
+	/trials = [1-12 = traintrial]
+</block>
+==================================================================================
+<expt>
+	/ blocks = [1 = instructionblk; 2 = train]
+</expt>

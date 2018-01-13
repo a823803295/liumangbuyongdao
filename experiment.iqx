@@ -1,0 +1,587 @@
+﻿<item instruction>
+	/1 = "    下面将呈现一些中文或英文词语。在出现词语之前屏幕中央会呈现“+”，请您将目光集中于此。之后将在同一位置呈现第一个词，这时不作反应；呈现第二个词时，请您判断其是否为动物。如果是，请按F键，如果不是，请按J键，请尽量快速并且准确地作出反应。"
+</item>
+
+<item continue>
+	/1 = "如果没有问题，请按任意键开始正式实验。"
+</item>
+
+<item end>
+	/1 = "实验结束，感谢您参加我们的实验！"
+</item>
+
+<item key>
+	/1 = "如果您没有疑问，请按任意键开始练习。"
+</item>
+
+<item qidong_1t>
+/1="杯子"
+/2="phone"
+</item>
+
+<item mubiao_1t>
+/1="pig"
+/2="乌龟"
+</item>
+
+<item qidong_2t>
+/1="拖鞋"
+/2="chess"
+</item>
+
+<item mubiao_2t>
+/1="手表"
+/2="键盘"
+</item>
+
+<item qidong_3t>
+/1="egg"
+/2="海洋"
+</item>
+
+<item mubiao_3t>
+/1="chicken"
+/2="whale"
+</item>
+
+<item qidong_4t>
+/1="box"
+/2="铅笔"
+</item>
+
+<item mubiao_4t>
+/1="glasses"
+/2="糖果"
+</item>
+
+<item qidong_1>
+/1="apple"
+/2="bike"
+/3="music"
+/4="气球"
+/5="围巾"
+/6="电视"
+/7="robot"
+/8="pear"
+/9="dress"
+/10="拖鞋"
+/11="咖啡"
+/12="茄子"
+</item>
+
+<item mubiao_1>
+/1="wolf"
+/2="mouse"
+/3="snake"
+/4="lion"
+/5="duck"
+/6="tiger"
+/7="犀牛"
+/8="乌鸦"
+/9="蚂蚁"
+/10="老鹰"
+/11="鸽子"
+/12="狐狸"
+</item>
+
+<item qidong_2>
+/1="nose"
+/2="uncle"
+/3="wall"
+/4="风扇"
+/5="雨伞"
+/6="牙刷"
+/7="clock"
+/8="hand"
+/9="photo"
+/10="森林"
+/11="沙发"
+/12="厨房"
+</item>
+
+<item mubiao_2>
+/1="train"
+/2="desk"
+/3="rice"
+/4="girl"
+/5="bread"
+/6="ruler"
+/7="金钱"
+/8="客厅"
+/9="银行"
+/10="饼干"
+/11="红旗"
+/12="篮球"
+</item>
+
+<item qidong_3>
+/1="bamboo"
+/2="water"
+/3="run"
+/4="青草"
+/5="池塘"
+/6="飞翔"
+/7="desert"
+/8="honey"
+/9="milk"
+/10="南极"
+/11="条纹"
+/12="看家"
+</item>
+
+<item mubiao_3>
+/1="panda"
+/2="fish"
+/3="horse"
+/4="sheep"
+/5="frog"
+/6="bird"
+/7="骆驼"
+/8="蜜蜂"
+/9="奶牛"
+/10="企鹅"
+/11="斑马"
+/12="小狗"
+</item>
+
+<item qidong_4>
+/1="ship"
+/2="doctor"
+/3="fork"
+/4="钥匙"
+/5="司机"
+/6="叶子"
+/7="paper"
+/8="road"
+/9="baby"
+/10="国王"
+/11="警察"
+/12="鞋子"
+</item>
+
+<item mubiao_4>
+/1="river"
+/2="nurse"
+/3="knife"
+/4="lock"
+/5="taxi"
+/6="tree"
+/7="书本"
+/8="行人"
+/9="奶瓶"
+/10="皇冠"
+/11="小偷"
+/12="袜子"
+</item>
+
+<item correctmsg>
+	/1 = "√"
+</item>
+
+<item errormsg>
+	/1 = "×"
+</item>
+
+<item fixation>
+	/1 = "+"
+</item>
+=====================================item定义结束=================================
+<text instructiontxt>
+	/items = instruction
+    /vposition = 69 pct
+	/fontstyle = ("楷体", 4%, true, false, false, false, 5, 1)
+	/txcolor = (0, 0, 0)
+	/txbgcolor = (255,255,255)
+	/size = (1300,800)
+	/hjustify = left
+</text>
+
+<text anykeytxt>
+	/items = key
+	/vposition = 70 pct
+	/fontstyle = ("楷体", 4%, true, false, false, false, 5, 1)
+	/txcolor = (255, 0, 0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text continuetxt>
+    /items = continue
+	/position = (50%,50%)
+	/fontstyle = ("楷体", 4%, true, false, false, false, 5, 1)
+	/txcolor = (0, 0, 0)
+	/txbgcolor = (255,255,255)
+</text>
+
+
+<text endtxt>
+    /items = end
+	/position = (50%,50%)
+	/fontstyle = ("楷体", 4%, true, false, false, false, 5, 1)
+	/txcolor = (0, 0, 0)
+	/txbgcolor = (255,255,255)
+</text>
+======================================================
+<text qidong_1t>
+    /items = qidong_1t
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_1t>
+    /items = mubiao_1t
+    /select = text.qidong_1t.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_2t>
+    /items = qidong_2t
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_2t>
+    /items = mubiao_2t
+    /select = text.qidong_2t.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_3t>
+    /items = qidong_3t
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_3t>
+    /items = mubiao_3t
+    /select = text.qidong_3t.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_4t>
+    /items = qidong_4t
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_4t>
+    /items = mubiao_4t
+    /select = text.qidong_4t.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_1>
+    /items = qidong_1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_1>
+    /items = mubiao_1
+    /select = text.qidong_1.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_2>
+    /items = qidong_2
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_2>
+    /items = mubiao_2
+	/select = text.qidong_2.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_3>
+    /items = qidong_3
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_3>
+    /items = mubiao_3
+	/select = text.qidong_3.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text qidong_4>
+    /items = qidong_3
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor =(255,255,255)
+</text>
+
+<text mubiao_4>
+    /items = mubiao_3
+	/select = text.qidong_4.selectedvalue
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text fixation>
+	/items = fixation
+	/fontstyle = ("Arial", 80ptc)
+	/txbgcolor = (transparent)
+	/txcolor = (0,0,0)
+</text>
+
+<text correctmsg>
+	/items = correctmsg
+	/select = 1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (white)
+</text>
+
+<text errormsg>
+	/items = errormsg
+	/select = 1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/txbgcolor = (white)
+</text>
+==============================文字也设置好了===================================
+<values>
+	/fixationtime = 0
+    /shapetime = 0
+    /qidongtime = 0
+    /blank2time = 0
+    /mubiaotime = 0
+</values>
+
+<expressions>
+	/generaterandom = ceil(rand(500,1000))
+</expressions>
+==================================================
+<shape blank1>
+	/erase = True(255,255,255)
+	/color = (white)
+	/size = (300,300)
+    /shape = rectangle
+</shape>
+
+<shape blank2>
+	/erase = True(255,255,255)
+	/color = (white)
+	/size = (300,300)
+    /shape = rectangle
+</shape>
+====这里设置了number,后期通过number的累加来显示不同的文字，同时让注视点随机在500ms~1s内呈现。====
+
+<trial twuguan_zhengque_trial>
+    /correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+	/validresponse = ("F","J")
+    /correctresponse = ("F")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.twuguan_zhengque_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.twuguan_zhengque_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.twuguan_zhengque_trial.insertstimulustime(text.qidong_1t,values.qidongtime)]
+	/ontrialbegin = [trial.twuguan_zhengque_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.twuguan_zhengque_trial.insertstimulustime(text.mubiao_1t,values.mubiaotime)]
+	/ontrialend = [trial.twuguan_zhengque_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+	/recorddata = false
+</trial>
+
+<trial twuguan_cuowu_trial>
+    /correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+	/validresponse = ("F","J")
+    /correctresponse = ("J")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.twuguan_cuowu_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.twuguan_cuowu_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.twuguan_cuowu_trial.insertstimulustime(text.qidong_2t,values.qidongtime)]
+	/ontrialbegin = [trial.twuguan_cuowu_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.twuguan_cuowu_trial.insertstimulustime(text.mubiao_2t,values.mubiaotime)]
+	/ontrialend = [trial.twuguan_cuowu_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+	/recorddata = false
+</trial>
+
+<trial tguanlian_zhengque_trial>
+    /correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+	/validresponse = ("F","J")
+    /correctresponse = ("F")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.tguanlian_zhengque_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.tguanlian_zhengque_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.tguanlian_zhengque_trial.insertstimulustime(text.qidong_3t,values.qidongtime)]
+	/ontrialbegin = [trial.tguanlian_zhengque_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.tguanlian_zhengque_trial.insertstimulustime(text.mubiao_3t,values.mubiaotime)]
+	/ontrialend = [trial.tguanlian_zhengque_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+	/recorddata = false
+</trial>
+
+<trial tguanlian_cuowu_trial>
+    /correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+	/validresponse = ("F","J")
+    /correctresponse = ("J")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.tguanlian_cuowu_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.tguanlian_cuowu_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.tguanlian_cuowu_trial.insertstimulustime(text.qidong_4t,values.qidongtime)]
+	/ontrialbegin = [trial.tguanlian_cuowu_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.tguanlian_cuowu_trial.insertstimulustime(text.mubiao_4t,values.mubiaotime)]
+	/ontrialend = [trial.tguanlian_cuowu_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+	/recorddata = false
+</trial>
+===========================下面是正式实验的trial=============================================
+<trial wuguan_zhengque_trial>
+	/validresponse = ("F","J")
+    /correctresponse = ("F")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.wuguan_zhengque_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.wuguan_zhengque_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.wuguan_zhengque_trial.insertstimulustime(text.qidong_1,values.qidongtime)]
+	/ontrialbegin = [trial.wuguan_zhengque_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.wuguan_zhengque_trial.insertstimulustime(text.mubiao_1,values.mubiaotime)]
+	/ontrialend = [trial.wuguan_zhengque_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+</trial>
+
+<trial wuguan_cuowu_trial>
+	/validresponse = ("F","J")
+    /correctresponse = ("J")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.wuguan_cuowu_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.wuguan_cuowu_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.wuguan_cuowu_trial.insertstimulustime(text.qidong_2,values.qidongtime)]
+	/ontrialbegin = [trial.wuguan_cuowu_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.wuguan_cuowu_trial.insertstimulustime(text.mubiao_2,values.mubiaotime)]
+	/ontrialend = [trial.wuguan_cuowu_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+</trial>
+
+<trial guanlian_zhengque_trial>
+	/validresponse = ("F","J")
+    /correctresponse = ("F")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.guanlian_zhengque_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.guanlian_zhengque_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.guanlian_zhengque_trial.insertstimulustime(text.qidong_3,values.qidongtime)]
+	/ontrialbegin = [trial.guanlian_zhengque_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.guanlian_zhengque_trial.insertstimulustime(text.mubiao_3,values.mubiaotime)]
+	/ontrialend = [trial.guanlian_zhengque_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+</trial>
+
+<trial guanlian_cuowu_trial>
+	/validresponse = ("F","J")
+    /correctresponse = ("J")
+	/ontrialbegin = [values.fixationtime = expressions.generaterandom]
+    /ontrialbegin = [values.qidongtime = values.fixationtime +500]
+    /ontrialbegin = [values.blank2time = values.qidongtime +50]
+    /ontrialbegin = [values.mubiaotime = values.blank2time+100]
+	/ontrialbegin = [trial.guanlian_cuowu_trial.insertstimulustime(text.fixation, 0)]
+	/ontrialbegin = [trial.guanlian_cuowu_trial.insertstimulustime(shape.blank1,values.fixationtime)]
+	/ontrialbegin = [trial.guanlian_cuowu_trial.insertstimulustime(text.qidong_4,values.qidongtime)]
+	/ontrialbegin = [trial.guanlian_cuowu_trial.insertstimulustime(shape.blank2,values.blank2time)]
+    /ontrialbegin = [trial.guanlian_cuowu_trial.insertstimulustime(text.mubiao_4,values.mubiaotime)]
+	/ontrialend = [trial.guanlian_cuowu_trial.clearstimulusframes()]
+	/beginresponsetime = values.mubiaotime
+</trial>
+============================================================================================
+<trial instruction>
+	/validresponse = (anyresponse)
+	/stimulustimes = [1=instructiontxt, anykeytxt]
+	/recorddata = false
+</trial>
+
+<trial continue>
+	/validresponse = (anyresponse)
+	/stimulustimes = [1=continuetxt]
+	/recorddata = false
+</trial>
+
+<trial end>
+	/validresponse = (anyresponse)
+	/stimulustimes = [1=endtxt]
+	/recorddata = false
+</trial>
+==================================================================================
+
+<block instructionblk>
+	/screencolor = (255,255,255)
+	/trials = [1 = instruction]
+</block>
+
+<block continue>
+	/screencolor = (255,255,255)
+	/trials = [1 = continue]
+</block>
+
+<block end>
+	/screencolor = (255,255,255)
+	/trials = [1 = end]
+</block>
+
+
+<block train>
+	/screencolor = (255,255,255)
+	/trials = [1-8 =noreplace(twuguan_zhengque_trial,twuguan_cuowu_trial,tguanlian_zhengque_trial,tguanlian_cuowu_trial)]
+</block>
+
+<block exp>
+   /screencolor = (255,255,255)
+   /trials = [1-48 =noreplace(wuguan_zhengque_trial,wuguan_cuowu_trial,guanlian_zhengque_trial,guanlian_cuowu_trial)]
+</block>
+==================================================================================
+<expt>
+	/ blocks = [1 = instructionblk; 2 = train; 3 = continue; 4 = exp; 5 = end]
+</expt>
+===================================================================================================================
+<data>
+/ columns = [date, time, group, subject, blockcode, blocknum, trialcode, trialnum, response, correct, latency, 
+stimulusnumber, stimulusitem,text.mubiao_1.selectedvalue,text.mubiao_2.selectedvalue,text.mubiao_3.selectedvalue,text.mubiao_4.selectedvalue,text.qidong_1.selectedvalue,text.qidong_2.selectedvalue,text.qidong_3.selectedvalue,text.qidong_4.selectedvalue]
+/ separatefiles = true
+</data>
