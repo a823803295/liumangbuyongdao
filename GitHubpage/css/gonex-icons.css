@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'gonex-icons';
+  src:  url('../fonts/gonex-icons.eot?xflezt');
+  src:  url('../fonts/gonex-icons.eot?xflezt#iefix') format('embedded-opentype'),
+    url('../fonts/gonex-icons.ttf?xflezt') format('truetype'),
+    url('../fonts/gonex-icons.woff?xflezt') format('woff'),
+    url('../fonts/gonex-icons.svg?xflezt#gonex-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ico {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gonex-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-play_icon:before {
+  content: "\e900";
+  color: inherit;
+}
+.ico-rew_left:before {
+  content: "\e901";
+  color: inherit;
+}
+.ico-rew_right:before {
+  content: "\e902";
+  color: inherit;
+}
+.ico-share_icoon:before {
+  content: "\e903";
+  color: inherit;
+}
+.ico-speaker_icon:before {
+  content: "\e904";
+  color: inherit;
+}
+.ico-dribbble:before {
+  content: "\e905";
+  color: inherit;
+}
+.ico-facebook:before {
+  content: "\e906";
+  color: inherit;
+}
+.ico-google-plus:before {
+  content: "\e907";
+  color: inherit;
+}
+.ico-twitter:before {
+  content: "\e908";
+  color: inherit;
+}
+.ico-youtube:before {
+  content: "\e909";
+  color: inherit;
+}
+.ico-arrow_left:before {
+  content: "\e90a";
+  color: inherit;
+}
+.ico-arrow_right:before {
+  content: "\e90b";
+  color: inherit;
+}
+.ico-heart_icon:before {
+  content: "\e90c";
+  color: #f95353;
+}
+.ico-search-icon:before {
+  content: "\e90d";
+  color: inherit;
+}
